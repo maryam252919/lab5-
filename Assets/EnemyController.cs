@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,9 +16,7 @@ public class EnemyController : MonoBehaviour
 
     public void Flip()
     {
-        
-            sr.flipX = !sr.flipX;
-        
+        sr.flipX = !sr.flipX;
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -37,8 +36,6 @@ public class EnemyController : MonoBehaviour
                     "Player_stats was not found in the scene!"
                 );
             }
-
-            Flip();
         }
     }
 }
